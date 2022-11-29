@@ -1,0 +1,80 @@
+@import './../../scss/all.scss';
+
+.header {
+    background-image: linear-gradient(to bottom, rgba($color-7, .6),rgba($color-7, .0));
+    height: auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 300ms all ease-in-out;
+
+    &.fixed {
+        background-color: $color-4;
+        background-image: none;
+
+        .header__logo {
+            a {
+                color: $color-7;
+            }
+        }
+
+        .header__menu {
+            a {
+                color: $color-7;
+
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+        
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__logo {
+        a {
+            font-size: $font-size-xxl;
+            text-transform: uppercase;
+            color: $color-4;
+            font-weight: $font-weight-700;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+
+        a {
+            padding: 2px 5px;
+            color: $color-4;
+            font-weight: $font-weight-600;
+            font-size: $font-size-sm;
+            border-radius: 4px;
+            transition: 200ms all ease-in-out;
+
+            &:hover {
+                background-color: $color-4;
+                color: $color-1;
+            }
+        }
+    }
+
+}
