@@ -16,7 +16,7 @@
     transition: 300ms all ease-in-out;
 
     &.fixed {
-        background-color: $color-4;
+        background-color: $color-1;
         background-image: none;
 
         .header__logo {
@@ -28,9 +28,10 @@
         .header__menu {
             a {
                 color: $color-7;
-
+                
                 &:hover {
-                    opacity: .6;
+                    color: $color-1;
+                    background-color: $color-7;
                 }
             }
         }
@@ -67,11 +68,10 @@
             color: $color-4;
             font-weight: $font-weight-600;
             font-size: $font-size-sm;
-            border-radius: 4px;
             transition: 200ms all ease-in-out;
 
             &:hover {
-                background-color: $color-4;
+                background-color: $color-7;
                 color: $color-1;
             }
         }

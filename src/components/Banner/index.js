@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss';
 import $ from 'jquery';
 import {screen, scale} from './../../helpers/auxiliar';
 
-import bg from '../../assets/img/bg.jpg';
-import tree from '../../assets/img/bg-tree.png';
-import Snowflake from '../Snowflake';
+import bg from '../../assets/img/background.jpg';
+import arrowLeft from '../../assets/img/left-arrow.png';
+import arrowRight from '../../assets/img/right-arrow.png';
+// import tree from '../../assets/img/bg-tree.png';
 
 const Banner = () => {
+    const {data,setData} = useState([]);
 
     const animate = (e) => {
         let mouseX = e.pageX;
@@ -46,13 +48,17 @@ const Banner = () => {
     },[]);
     return  (
         <section className="banner" id='banner' style={{backgroundImage:`url(${bg})`}}>
-            <img className='banner__tree' src={tree} alt="" />
-            <Snowflake />
-            <div className='banner__text'>
-                <h1>Feliz Natal</h1>
+            {/* <img className='banner__tree' src={tree} alt="" /> */}
+            {/* <div className='banner__text'>
+                <h1>Your Portfolio</h1>
+            </div> */}
+            <div className='banner__button'>
+                <a href='#about'>Make a book</a>
             </div>
-            <div className='banner__modal'>
-                <h2>Feliz Natal</h2>
+            <div className='banner__arrow'>
+                <img src={arrowLeft} className='banner__arrow--left'/>
+                <p>3</p>
+                <img src={arrowRight} className='banner__arrow--right'/>
             </div>
         </section>
     )
