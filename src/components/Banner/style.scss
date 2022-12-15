@@ -20,8 +20,8 @@
     }
 
     &__button {
-        position: absolute;
         @include fade("in","right", 200px, 4s);
+        position: absolute;
 
         a {
             color: $color-7;
@@ -32,11 +32,33 @@
             font-weight: 600;
             font-family: $main-font-2;
             transition: 600ms all $transition-time;
+            white-space: nowrap;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             &:hover {
                 background-color: $color-7;
                 color: $color-1;
+                
+                img {
+                    max-height: 20px;
+                    margin-top: 10px;
+                }
             }
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            max-height: 0px;
+            transition: 300ms all cubic-bezier(0.13, 1.02, 0.32, 0.97);
+            transform: rotate(-90deg);
+            width: 20px;
         }
     }
 

@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.scss';
+import image from '../../assets/img/photographer.jpg';
+import $ from 'jquery';
 
 
 const About = () => {
+
+    const active = (e) => {
+        if($("#about").offset().top - $(window).scrollTop() < 300 && !$(".about").hasClass("animate")) {
+            $(".about").addClass("animate");
+        }
+    }
+    
+    useEffect(() => {
+        $(window).on('scroll',()=>active());
+    },[]);
+
     return  (
         <section className="about" id='about'>
-            <div className='banner__text'>
-                <h1>Feliz Natal</h1>
+            <div className='about__left'>
+                <div className='about__left__image'>
+                    <img  src={image} alt='' />
+                </div>
+                <div className='about__left__text'>
+                    <p>Hello, Im a <span>Lore Ipsum.</span></p>
+                    <p>Im a Photographer</p>
+                </div>
+                {/* <div className='about__left__layer-1'></div>
+                <div className='about__left__layer-2'></div>
+            <div className='about__left__layer-3'></div> */}
+            </div>
+            <div className='about__right'>
+                <div className='about__right__text'>
+                    <p className='about__right__text--p'>Irure adipisicing aute elit voluptate incididunt in consequat dolor. Eiusmod ipsum aliqua fugiat voluptate in ullamco aliqua sit.</p>
+                    <p className='about__right__text--p'>Ex mollit consequat excepteur nostrud. Cillum quis voluptate consequat aute duis do nostrud sint Lorem aliqua. Non eu esse laboris ut fugiat occaecat dolore. </p>
+                    <p className='about__right__text--highlight'><b>Lorem Ipsum</b></p>
+                </div>
             </div>
         </section>
     )

@@ -9,33 +9,33 @@ import arrowRight from '../../assets/img/right-arrow.png';
 // import tree from '../../assets/img/bg-tree.png';
 
 const Banner = () => {
-    const {data,setData} = useState([]);
+    // const {data,setData} = useState([]);
 
-    const animate = (e) => {
-        let mouseX = e.pageX;
-        let mouseY = e.pageY;
+    // const animate = (e) => {
+    //     let mouseX = e.pageX;
+    //     let mouseY = e.pageY;
 
-        if(mouseY > screen.height + screen.documentHeight * 0.4) { 
-            return;
-        }
+    //     if(mouseY > screen.height + screen.documentHeight * 0.4) { 
+    //         return;
+    //     }
 
-        let originX = mouseX - screen.width * 0.3;
-        let originY = mouseY - screen.height * 0.5;
+    //     let originX = mouseX - screen.width * 0.3;
+    //     let originY = mouseY - screen.height * 0.5;
 
-        let eHeight = $(".banner").height();
-        let eWidth = $(".banner").width();
+    //     let eHeight = $(".banner").height();
+    //     let eWidth = $(".banner").width();
 
-        let x = (scale(originX,0,screen.width,-12,12) * -1) - eWidth / 5;
-        let y = (scale(originY,0,screen.height,-12,12) * -1) - eHeight / 5;
+    //     let x = (scale(originX,0,screen.width,-12,12) * -1) - eWidth / 5;
+    //     let y = (scale(originY,0,screen.height,-12,12) * -1) - eHeight / 5;
 
 
-        $(".neblina1").css({
-            "left":`${x}px`,
-            "bottom":`${y}px`
-        });
+    //     $(".neblina1").css({
+    //         "left":`${x}px`,
+    //         "bottom":`${y}px`
+    //     });
 
-        console.log(screen)
-    }
+    //     console.log(screen)
+    // }
     
     useEffect(() => {
         // $(window).on('scroll',()=>animate());
@@ -53,12 +53,17 @@ const Banner = () => {
                 <h1>Your Portfolio</h1>
             </div> */}
             <div className='banner__button'>
-                <a href='#about'>Make a book</a>
+                <a href='#about'>
+                    <span>
+                        Make a book
+                    </span> 
+                    {/* <img src={arrowLeft} className='banner__button__arrow' alt='' /> */}
+                </a>
             </div>
             <div className='banner__arrow'>
-                <img src={arrowLeft} className='banner__arrow--left'/>
+                <img src={arrowLeft} className='banner__arrow--left' alt='' />
                 <p>3</p>
-                <img src={arrowRight} className='banner__arrow--right'/>
+                <img src={arrowRight} className='banner__arrow--right' alt='' />
             </div>
         </section>
     )
