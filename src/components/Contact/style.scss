@@ -1,0 +1,42 @@
+@import './../../scss/all.scss';
+
+.contact {
+    background-color: $color-1;
+    min-height: 600px;
+    padding: 150px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+
+
+    &.animate {
+        .about__left__image {
+            @include fade("in","right", 300px, 4s);
+        }
+        .about__left__text p {
+            &:first-child {
+                @include fade("in","right", 300px, 4s, 1s);
+            }
+            
+            &:last-child {
+                @include fade("in","right", 300px, 4s, .7s);
+            }
+        }
+        
+        .about__right__text {
+            @include fade("in","left", 300px, 4s);
+            
+            .about__right__text--p {
+                @include fade("in","left", 300px, 4s, .2s);
+            }
+            
+            .about__right__text--highlight {
+                @include fade("in","left", 300px, 4s, .1s);
+            }
+        }
+    }
+
+}

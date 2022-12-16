@@ -4,6 +4,8 @@ import './scss/all.scss';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import About from './components/About';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <Header />
       <Banner />
       <About />
-      <About />
+      <Gallery />
+      <Contact />
     </div>
   );
 }

@@ -7,6 +7,10 @@
     font-family: $main-font;
 }
 
+body {
+    scroll-behavior: smooth
+}
+
 // html,body {
 //     overflow: hidden;
 //     width: 100vw;
@@ -33,4 +37,6 @@
 
 .container {
     @extend %container;
+    display: flex;
+    flex-direction: row;
 }
