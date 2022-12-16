@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-photographer/static/css/main.a7ea4cf5.css",
+    "main.js": "/portfolio-photographer/static/js/main.be2f4127.js",
+    "static/media/background.jpg": "/portfolio-photographer/static/media/background.fa2d932b8036f3bb6e54.jpg",
+    "static/media/retrato-1.jpg": "/portfolio-photographer/static/media/retrato-1.b983c3b9c4d5008aa33e.jpg",
+    "static/media/paisagem-2.jpg": "/portfolio-photographer/static/media/paisagem-2.7e163f8d7490fa5e4382.jpg",
+    "static/media/quadrado-2.jpg": "/portfolio-photographer/static/media/quadrado-2.5a208980060b81000248.jpg",
+    "static/media/retrato-3.jpg": "/portfolio-photographer/static/media/retrato-3.2b9a99864ddefa5b0048.jpg",
+    "static/media/retrato-2.jpg": "/portfolio-photographer/static/media/retrato-2.5953493057aa77db67d2.jpg",
+    "static/media/photographer.jpg": "/portfolio-photographer/static/media/photographer.7bb799a649cb282e4456.jpg",
+    "static/media/quadrado-1.jpg": "/portfolio-photographer/static/media/quadrado-1.56d10aa27aa8fc178a5f.jpg",
+    "static/media/quadrado-3.jpg": "/portfolio-photographer/static/media/quadrado-3.8286c06543d1aab11964.jpg",
+    "static/media/paisagem-1.jpg": "/portfolio-photographer/static/media/paisagem-1.3ab9eac354315d2be73e.jpg",
+    "static/media/Dagelland-8MB7B.ttf": "/portfolio-photographer/static/media/Dagelland-8MB7B.05a27b02a356b2622da9.ttf",
+    "index.html": "/portfolio-photographer/index.html",
+    "main.a7ea4cf5.css.map": "/portfolio-photographer/static/css/main.a7ea4cf5.css.map",
+    "main.be2f4127.js.map": "/portfolio-photographer/static/js/main.be2f4127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7ea4cf5.css",
+    "static/js/main.be2f4127.js"
+  ]
+}
