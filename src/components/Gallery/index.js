@@ -21,7 +21,8 @@ const Gallery = () => {
         //     $(".gallery").addClass("animate");
         // }
 
-        $(".gallery__image").map((id,el) => {
+        console.log($(".gallery__image"))
+        $(".gallery__image").each((id,el) => {
             if($(el).offset().top - $(window).scrollTop() < 500 && !$(el).hasClass("show")) {
                 $(el).addClass("show");
             }
@@ -43,7 +44,7 @@ const Gallery = () => {
                 </div>
                 <div className='gallery__image gallery__image-3'>
                     <div className='gallery__image__title'>
-                        <h3 id='casamento'>Casamento</h3>
+                        <h3 id='wedding'>Wedding</h3>
                     </div>
                 </div>
                 <div className='gallery__image gallery__image-4'>
@@ -56,7 +57,7 @@ const Gallery = () => {
                     <LazyLoadImage src={quadrado1} alt='' />
                 </div>
                 <div className='gallery__image gallery__image-7'>
-                    <LazyLoadImage src={paisagem2} alt='' />
+                    <LazyLoadImage src={paisagem1} alt='' />
                 </div>
                 <div className='gallery__image gallery__image-8'>
                     <LazyLoadImage src={retrato2} alt='' />
@@ -69,7 +70,7 @@ const Gallery = () => {
                 </div>
                 <div className='gallery__image gallery__image-11'>
                     <div className='gallery__image__title gallery__image__title--2'>
-                        <h3 id='aniversarios'>Aniversario</h3>
+                        <h3 id='birthday'>Birthday</h3>
                     </div>
                 </div>
                 <div className='gallery__image gallery__image-12'>

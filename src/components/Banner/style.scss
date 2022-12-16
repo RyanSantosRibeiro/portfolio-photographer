@@ -1,7 +1,7 @@
 @import './../../scss/all.scss';
 
 .banner {
-    background-color: paleturquoise;
+    background-color: rgba($color-7, $alpha: .8);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,6 +12,15 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    
+    &__image {
+        max-width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
 
     &__tree {
         width: 105vw;

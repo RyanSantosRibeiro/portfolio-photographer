@@ -28,10 +28,9 @@ const Header = () => {
 
                 <ul className='header__menu'>
                     <li><a href='/'>Home</a></li>
-                    <li><a href='/'>Ensaios</a></li>
-                    <li><a href='#casamento'>Casamento</a></li>
-                    <li><a href='#aniversarios'>Aniversarios</a></li>
-                    <li className='highlight'><a href='/'>Contato</a></li>
+                    <li><a href='#wedding'>Wedding</a></li>
+                    <li><a href='#birthday'>Birthday</a></li>
+                    <li className='highlight'><a href='#contact'>Contact</a></li>
                 </ul>
             </div>
         </div>
