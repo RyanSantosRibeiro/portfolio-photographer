@@ -6,6 +6,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Gallery />
       <Contact />
+      <Footer />
     </div>
   );
 }

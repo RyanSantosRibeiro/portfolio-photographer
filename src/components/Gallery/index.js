@@ -22,7 +22,6 @@ const Gallery = () => {
         // }
 
         $(".gallery__image").map((id,el) => {
-            console.log(id,el);
             if($(el).offset().top - $(window).scrollTop() < 500 && !$(el).hasClass("show")) {
                 $(el).addClass("show");
             }

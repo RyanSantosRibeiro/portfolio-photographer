@@ -18,6 +18,9 @@ const About = () => {
 
     return  (
         <section className="about" id='about'>
+             <div className='container'>
+                <h2 className='default-title'>About</h2>
+            </div>
             <div className="container">
                 <div className='about__left'>
                     <div className='about__left__image'>

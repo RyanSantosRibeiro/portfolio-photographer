@@ -3,14 +3,18 @@
 .about {
     background-color: $color-1;
     min-height: 600px;
-    padding: 150px 0;
+    padding: 80px 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     overflow: hidden;
+
+    .default-title {
+        opacity: 0;
+    }
 
 
     &__left {
@@ -106,6 +110,9 @@
 
 
     &.animate {
+        .default-title {
+            @include fade("in","right", 300px, 4s);
+        }
         .about__left__image {
             @include fade("in","right", 300px, 4s);
         }
